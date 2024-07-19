@@ -66,8 +66,63 @@ body {
 
 .right-form {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   background-color: rgb(233, 233, 233);
   width: 1164px;
   height: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+label,
+input {
+  font-size: 25px;
+}
+
+button {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: rgb(69, 119, 69);
+  border: none;
+  color: rgb(233, 233, 233);
+}
+
+input {
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px 2px rgb(140, 140, 140);
+}
+
+header,
+form {
+  margin: 0;
+  padding: 0px 90px;
+}
+
+hr {
+  height: 10px;
+  width: 100%;
+  border: none;
+  background-color: rgba(194, 192, 192, 0.91);
+  border-radius: 15px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-last,
+.email-phone {
+  display: flex;
+  flex-direction: row;
+}
+
+.pass {
 }
