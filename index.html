@@ -15,11 +15,72 @@
       <div class="logo">
         <img src="./public/images/odin-lined.png" id="logo-img" />
       </div>
-      <p class="img-footer" id="img-footer">This image from Unsplash</p>
+      <p class="img-footer" id="img-footer">
+        Image by
+        <a
+          href="https://unsplash.com/photos/pile-of-rocks-near-on-mountain-xyQnsGRmeNQ"
+          target="_blank"
+          class="footer-link"
+          >Patrick Metzdorf</a
+        >
+        at
+        <a href="https://unsplash.com/" target="_blank" class="footer-link"
+          >Unsplash</a
+        >
+      </p>
     </div>
     <div class="right-form">
       <section class="form-section">
-        <h1></h1>
+        <header>
+          <h1>
+            Welcome to the Sign Up Page! This is not a real form for siging up,
+            so do not enter your personal information! But still, it's a pretty
+            sign up page, isn't it?
+          </h1>
+        </header>
+
+        <form>
+          <h2>Let's get you signed up!</h2>
+
+          <section>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" placeholder="John" />
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" placeholder="Doe" />
+            <label for="e_mail">EMAIL</label>
+            <input type="email" id="e_mail" placeholder="johndoe@example.com" />
+            <label for="phone_number">Phone Number</label>
+            <input
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              type="tel"
+              id="phone_number"
+              placeholder="123-456-7890"
+            />
+
+            <p>Password</p>
+            <p>
+              Password must be a minimum of 8 characters. Must contain at least
+              one uppercase, one lowercase, and one special character (e.g.
+              @$&_).
+            </p>
+
+            <label for="password">Password</label>
+            <input
+              id="password"
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+              type="password"
+            />
+            <label for="confirm_pass">Confirm Password</label>
+            <input
+              id="confirm_pass"
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+              type="password"
+            />
+          </section>
+
+          <button type="submit">Submit</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </form>
         <form class="form"></form>
       </section>
     </div>

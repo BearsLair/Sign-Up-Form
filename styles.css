@@ -42,7 +42,26 @@ body {
   width: 556px;
   text-align: center;
   position: absolute;
-  top: 800px;
+  top: 775px;
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  background-color: rgba(29, 29, 29, 0.708);
+}
+
+.footer-link:link {
+  color: rgb(233, 233, 233);
+}
+
+.footer-link:visited {
+  color: rgb(233, 233, 233);
+}
+
+.footer-link:active {
+  color: rgb(233, 233, 233);
+}
+
+.footer-link:hover {
+  color: rgb(233, 233, 233);
 }
 
 .right-form {
