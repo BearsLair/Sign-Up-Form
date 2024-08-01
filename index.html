@@ -43,46 +43,58 @@
 
           <section>
             <div class="first-last">
-              <label for="first_name">First Name</label>
-              <input type="text" id="first_name" placeholder="John" />
-              <label for="last_name">Last Name</label>
-              <input type="text" id="last_name" placeholder="Doe" />
+              <div class="flex_vertical">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" placeholder="John" />
+              </div>
+              <div class="flex_vertical">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" placeholder="Doe" />
+              </div>
             </div>
             <div class="email-phone">
-              <label for="e_mail">EMAIL</label>
-              <input
-                type="email"
-                id="e_mail"
-                placeholder="johndoe@example.com"
-              />
-              <label for="phone_number">Phone Number</label>
-              <input
-                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-                type="tel"
-                id="phone_number"
-                placeholder="123-456-7890"
-              />
+              <div class="flex_vertical">
+                <label for="e_mail">EMAIL</label>
+                <input
+                  type="email"
+                  id="e_mail"
+                  placeholder="johndoe@example.com"
+                />
+              </div>
+              <div class="flex_vertical">
+                <label for="phone_number">Phone Number</label>
+                <input
+                  pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                  type="tel"
+                  id="phone_number"
+                  placeholder="123-456-7890"
+                />
+              </div>
             </div>
             <div class="pass">
-              <p>Password</p>
-              <p>
+              <p class="pass_description">
                 Password must be a minimum of 8 characters. Must contain at
                 least one uppercase, one lowercase, and one special character
                 (e.g. @$&_).
               </p>
-
-              <label for="password">Password</label>
-              <input
-                id="password"
-                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                type="password"
-              />
-              <label for="confirm_pass">Confirm Password</label>
-              <input
-                id="confirm_pass"
-                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                type="password"
-              />
+              <div class="pass_inputs">
+                <div class="pass_firstinput">
+                  <label for="password">Password</label>
+                  <input
+                    id="password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    type="password"
+                  />
+                </div>
+                <div class="pass_secondinput">
+                  <label for="confirm_pass">Confirm Password</label>
+                  <input
+                    id="confirm_pass"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    type="password"
+                  />
+                </div>
+              </div>
             </div>
           </section>
           <hr />
